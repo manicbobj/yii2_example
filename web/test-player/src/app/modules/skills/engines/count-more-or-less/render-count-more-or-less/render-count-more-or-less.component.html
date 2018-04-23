@@ -1,0 +1,70 @@
+<div class="section">
+  <p>
+    There are {{topAtoms}} {{(topAtoms == 1 ? atom?.name : atom?.plural)}} in the top {{frameSize|toWords}} frame.
+    How many {{atom?.plural}} are in the bottom {{frameSize|toWords}} frame?
+  </p>
+  <p>
+    Hint: the bottom {{frameSize|toWords}} frame has <b>one {{countType}}</b>.
+  </p>
+
+</div>
+<div class="section">
+  <div class="frame-table-wrapper">
+    <table class="">
+      <tr>
+        <td class="frame-table-cell">
+          <div class="tenframe-single">
+            <table *ngIf="topFrame">
+              <tr *ngFor="let row of topFrame">
+                <td *ngFor="let cell of row">
+                  <div class="tenframe-cell" style="width:54px; height:54px">
+                    <div class="cell-child">
+                      <img class="atom-image" [src]="atom?.url" *ngIf="cell">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td class="frame-table-cell">
+          <div class="counting-number in-circle large">
+            {{topAtoms}}
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div class="frame-table-wrapper">
+    <table>
+      <tr>
+        <td class="frame-table-cell">
+          <div class="tenframe-single">
+            <table *ngIf="bottomFrame">
+              <tr *ngFor="let row of bottomFrame">
+                <td *ngFor="let cell of row">
+                  <div class="tenframe-cell" style="width:54px; height:54px">
+                    <div class="cell-child">
+                      <img class="atom-image" [src]="atom?.url" *ngIf="cell">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td class="frame-table-cell">
+          <div class="counting-input">
+            <input type="text" [(ngModel)]="question.response.value">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="section" [hidden]="mode!=='test'">
+  <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

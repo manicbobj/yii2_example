@@ -1,0 +1,62 @@
+<div class="section">
+    Count the {{atom?.plural}}. Click each {{atom?.name}} to keep track as you count.
+</div>
+
+<div class="section">
+
+    <div class="guide-counting-list">
+
+        <div class="guide-counting-clickable-image-container"
+             *ngFor="let clickIndex of atomIndexer; let i=index"
+             (click)="mode == 'test' && clickAtom(i)">
+            <div class="guide-counting-clickable-image no-select">
+
+                <div class="guide-counting-badge-container" [hidden]="clickIndex == 0">
+
+                    <div class="guide-counting-badge-animation"
+                         [ngClass]="{'animated fastZoomIn fastest visible instant': clickIndex != 0}">
+
+                        <div class="guide-counting-badge-number default-cursor"
+                             style="font-size: 116%; transform: translate(-50%, -50%);">
+                            {{clickIndex}}
+                        </div>
+
+                        <div class="counting-badge-circle" style="width: 46px; height: 46px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="guide-counting-image" [ngClass]="{'clicked': clickIndex != 0}">
+                    <img class="atom-image" [src]="atom?.url">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="section">
+    How many {{atom?.plural}} are there?
+</div>
+
+<div class="section" [hidden]="mode==='static'">
+    <div class="numberButtonRow">
+        <ng-container *ngFor="let indexer of cardIndexer">
+            <app-card
+                    [cardnum]="indexer"
+                    [selected]="indexer == question.response.value"
+                    (click)="selectCard(indexer)"
+                    >
+            </app-card>
+        </ng-container>
+    </div>
+</div>
+
+<div class="section" [hidden]="mode==='static'">
+    <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

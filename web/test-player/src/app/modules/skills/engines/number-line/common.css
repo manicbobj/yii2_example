@@ -1,0 +1,7 @@
+.tick-fill-in {
+    border-radius: 0;
+    border: 1px solid gray;
+    font-size: 1em;
+    width: 3em;
+    text-align: center;
+}

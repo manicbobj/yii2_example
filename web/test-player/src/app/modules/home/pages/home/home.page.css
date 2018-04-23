@@ -1,0 +1,152 @@
+.hkmp-card {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    height: 210px;
+    position: relative;
+    padding: 15px 20px 10px;
+    margin-bottom: 20px;
+}
+
+.hkmp-card-title {
+    display: block;
+    font: 300 28px/38px "Roboto Slab", verdana, sans-serif;
+    padding-left: 32px;
+    margin-bottom: 10px;
+}
+
+.hkmp-card-title:hover, .hkmp-card-title:focus {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hkmp-card-tab {
+    -webkit-border-radius: 0 19px 19px 0;
+    -moz-border-radius: 0 19px 19px 0;
+    border-radius: 0 19px 19px 0;
+    color: white;
+    display: block;
+    font: 700 18px/38px "Trebuchet MS", verdana, sans-serif;
+    height: 38px;
+    left: -4px;
+    padding-right: 11px;
+    position: absolute;
+    text-align: right;
+    text-decoration: none;
+    top: 15px;
+    width: 43px;
+}
+
+.hkmp-card-tab:hover, .hkmp-card-tab:focus {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.hkmp-card-desc {
+    line-height: 1.4em;
+    margin: 0 0 12px;
+    min-height: 60px;
+    padding: 0;
+}
+
+.hkmp-card-subject-links {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 10px;
+}
+
+.hkmp-card-subject-links ol {
+    padding-left: 0px;
+}
+.hkmp-card-subject-links ol li{
+    list-style: none;
+}
+
+.hkmp-card-subject-links .subject-link {
+    float: right;
+}
+
+/* Color classes */
+.orange1-bg {
+    background-color: #f39317;
+}
+.orange1-txt, .orange1-txt:hover {
+    color: #f39317;
+}
+.orange1-bdr {
+    border-color: #f39317;
+}
+.green1-bg {
+    background-color: #42ae18;
+}
+.green1-txt, .green1-txt:hover {
+    color: #42ae18;
+}
+.green1-bdr {
+    border-color: #42ae18;
+}
+.red1-txt, .red1-txt:hover {
+    color: #d74726;
+}
+.red1-bg {
+    background-color: #d74726;
+}
+.red1-bdr {
+    border-color: #d74726;
+}
+.blue1-txt, .blue1-txt:hover {
+    color: #00a1de;
+}
+.blue1-bg {
+    background-color: #00a1de;
+}
+.blue1-bdr {
+    border-color: #00a1de;
+}
+.purple1-txt, .purple1-txt:hover {
+    color: #8d33aa;
+}
+.purple1-bdr {
+    border-color: #8d33aa;
+}
+.purple1-bg {
+    background-color: #8d33aa;
+}
+.green2-bg {
+    background-color: #00b971;
+}
+.green2-bdr {
+    border-color: #00b971;
+}
+.green2-txt, .green2-txt:hover {
+    color: #00b971;
+}
+.orange2-bdr {
+    border-color: #e9681b;
+}
+.orange2-bg {
+    background-color: #e9681b;
+}
+.orange2-txt, .orange2-txt:hover {
+    color: #e9681b;
+}
+.green3-txt, .green3-txt:hover {
+    color: #0b863c;
+}
+.green3-bg {
+    background-color: #0b863c;
+}
+.green3-bdr {
+    border-color: #0b863c;
+}
+
+.lemon1-txt, .lemon1-txt:hover {
+    color: #eabc00;
+}
+.lemon1-bdr {
+    border-color: #eabc00;
+}
+.lemon1-bg {
+    background-color: #eabc00;
+}
+/* -------------------- */

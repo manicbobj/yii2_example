@@ -1,0 +1,100 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+      <div class="counting-input">
+        <input type="text" disabled [ngModel]="question.validation.valid_response.value">
+      </div>
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+
+    <div class="tab-box-bd">
+      <div class="section">
+        Count the tally marks. What number is shown?
+      </div>
+      <div class="section">
+        <table>
+          <tr>
+            <td *ngFor="let mark of tallyMarks;">
+              <div>
+                <img class="tally-mark-img" [src]="mark.url">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <div class="counting-input">
+          <input type="text" disabled>
+        </div>
+      </div>
+      <div class="section">
+        <div class="answer-header">
+          You answered:
+        </div>
+        <div>
+          <div class="counting-input">
+            <input type="text" disabled [ngModel]="question.response.value">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="section">
+        <ng-container *ngIf="tallyCumulativeSums.length == 1; else multi_tally_desc">
+          Count the tally marks.
+        </ng-container>
+        <ng-template #multi_tally_desc>
+          Count first group as {{tallyMarks[0].number}}. Then count up from {{tallyMarks[0].number}}.
+        </ng-template>
+
+      </div>
+      <div class="section">
+        <table>
+          <tr>
+            <td *ngFor="let sum of tallyCumulativeSums">{{sum}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let mark of tallyMarks"><img [src]="mark.url" class="tally-mark-img"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <span *ngIf="tallyCumulativeSums.length == 1">
+          There are {{tallyCumulativeSums[0]}} tally marks.
+        </span>
+        These tally marks shows the number {{question.validation.valid_response.value}}
+      </div>
+    </div>
+  </div>
+  <div class="next-question">
+    <button class="btn btn-success btn-large" (click)="submit()">
+      Try next
+    </button>
+  </div>
+</div>

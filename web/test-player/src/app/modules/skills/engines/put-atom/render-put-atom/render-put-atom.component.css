@@ -1,0 +1,51 @@
+.section {
+    font-size: 125%;
+}
+
+.draggable-wrapper {
+    width: 700px;
+}
+
+.bottom-border {
+    border-bottom: 2px solid #cccdcf;
+}
+
+.background {
+    width: 700px;
+    height: 365px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.sticker-wrapper {
+    padding-top: 4px;
+    border: 2px solid #cccdcf;
+}
+
+.sticker-row .sticker-box {
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    margin: 6px;
+}
+
+.sticker-box {
+    border: 2px solid #00aa00;
+}
+
+.sticker-box img {
+    width: 100%;
+    max-height: 100%;
+}
+
+img.in-move {
+    opacity: 0.5;
+}
+
+img.on-landscape {
+
+}

@@ -1,0 +1,99 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+      <div class="number-button-answer">
+        {{question.validation.valid_response.value}}
+      </div>
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="renderer-wrapper">
+        <div class="section">
+          How many {{shape.name + 's'}} are on the frame?
+        </div>
+        <div class="section">
+          <div class="tenframe-single" *ngFor="let frame of frames">
+            <table>
+              <tr *ngFor="let row of frame">
+                <td *ngFor="let cell of row">
+                  <div class="tenframe-cell" style="width:54px; height:54px">
+                    <div class="cell-child">
+                      <Shape [type]="shape.shape_code" [color]="color" [size]="50" *ngIf="cell.fill"></Shape>
+                    </div>
+                    <div class="cell-badge" *ngIf="cell.fill && mode==='solution'">
+                      {{cell.badge}}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <app-card [cardnum]="card.num" [selected]="card.selected" (click)="selectCard(i)"
+                    *ngFor="let card of cards; let i = index" >
+          </app-card>
+        </div>
+      </div>
+
+      <div class = "answer-header">
+        You answered:
+      </div>
+      <div class="">
+        {{question.response.value}}
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="renderer-wrapper">
+        <div class="section">
+          Count the {{shape.name}}s.
+        </div>
+        <div class="section">
+          <div class="tenframe-single" *ngFor="let frame of frames">
+            <table>
+              <tr *ngFor="let row of frame">
+                <td *ngFor="let cell of row">
+                  <div class="tenframe-cell" style="width:54px; height:54px">
+                    <div class="cell-child">
+                      <Shape [type]="shape.shape_code" [color]="color" [size]="50" *ngIf="cell.fill"></Shape>
+                    </div>
+                    <div class="cell-badge">
+                      {{cell.badge}}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        There are {{question.validation.valid_response.value}} {{shape.name}}s
+      </div>
+    </div>
+  </div>
+</div>

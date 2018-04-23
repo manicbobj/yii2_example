@@ -1,0 +1,814 @@
+[
+  {
+    "id": 1,
+    "template": "Count the [atom]s. Click each [atom] to keep track as you count.<br>[atom_area]<br>How many [atom]s are there?[card_area]",
+    "render_options": {
+      "available": {}
+    },
+    "generator_engine": "GenCountAtom",
+    "render_engine": "RenderCountAtom",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountAtom"
+  },
+  {
+    "id": 2,
+    "template": "How many [atom]s are there?<br>[atom_area]<br>[card_area]",
+    "render_options": {
+      "available": {
+        "atom_aligns": [
+          "horizon",
+          "diagonal"
+        ],
+        "card_aligns": [
+          "horizon"
+        ]
+      },
+      "default": {
+        "enable_guide": false
+      }
+    },
+    "generator_engine": "GenCountAtom",
+    "render_engine": "RenderNumAtom",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountAtom"
+  },
+  {
+    "id": 3,
+    "template": "Put [num_atoms] [atom]s in the picture",
+    "generator_engine": "GenPutAtom",
+    "render_engine": "RenderPutAtom",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackPutAtom"
+  },
+  {
+    "id": 4,
+    "template": "How many shapes are on the frame?<br>[frame_area]<br>[card_area]",
+    "generator_engine": "GenShapeInFrame",
+    "render_engine": "RenderShapeInFrame",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackShapeInFrame"
+  },
+  {
+    "id": 5,
+    "template": "Which shows [num_atoms]?[atom_group_area]",
+    "render_options": {
+      "default": {
+        "num_atom_box": 3
+      }
+    },
+    "generator_engine": "GenRepresentNum",
+    "render_engine": "RenderRepresentNum",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackRepresentNum"
+  },
+  {
+    "id": 6,
+    "template": "What colour is the [ordinal] square?[square_area]<br>[card_area]",
+    "generator_engine": "GenOrdinalSquare",
+    "render_engine": "RenderOrdinalSquare",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackOrdinalSquare"
+  },
+  {
+    "id": 7,
+    "template": "Count the apples.<br>[atoms_area]<br>Which group has one more<br>[atom_group_area]",
+    "count": "more",
+    "generator_engine": "GenMoreOrLess",
+    "render_engine": "RenderMoreOrLess",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMoreOrLess"
+  },
+  {
+    "id": 8,
+    "template": "Count the apples.<br>[atoms_area]<br>Which group has one less<br>[atom_group_area]",
+    "count": "less",
+    "generator_engine": "GenMoreOrLess",
+    "render_engine": "RenderMoreOrLess",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMoreOrLess"
+  },
+  {
+    "id": 9,
+    "template": "There are [num_atom][atom_name] in the top row.",
+    "count": "more",
+    "generator_engine": "GenCountMoreOrLess",
+    "render_engine": "RenderCountMoreOrLess",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountMoreOrLess"
+  },
+  {
+    "id": 10,
+    "template": "There are [num_atom][atom_name] in the top row.",
+    "count": "less",
+    "generator_engine": "GenCountMoreOrLess",
+    "render_engine": "RenderCountMoreOrLess",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountMoreOrLess"
+  },
+  {
+    "id": 11,
+    "template": "Counting [count_type] from [number], which number comes [count_type]?",
+    "generator_engine": "GenCountUpDown",
+    "render_engine": "RenderCountUpDown",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountUpDown"
+  },
+  {
+    "id": 13,
+    "template": "Count the tally marks. What number is shown?",
+    "generator_engine": "GenTallyMark",
+    "render_engine": "RenderTallyMark",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackTallyMark"
+  },
+  {
+    "id": 14,
+    "template": "Type the missing number.",
+    "generator_engine": "GenNumberLine",
+    "render_engine": "RenderNumberLine",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackNumberLine",
+    "num_steps": 5
+  },
+  {
+    "id": 15,
+    "template": "Which number comes [type] [number]",
+    "generator_engine": "GenNumberLine",
+    "render_engine": "RenderNumberSequence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackNumberSequence",
+    "num_steps": 10
+  },
+  {
+    "id": 16,
+    "template": "Count [type] from [number]",
+    "generator_engine": "GenCountForwardBack",
+    "render_engine": "RenderCountForwardBack",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountForwardBack"
+  },
+  {
+    "id": 17,
+    "template": "Which number comes [type] [number]",
+    "generator_engine": "GenNameNumber",
+    "render_engine": "RenderNameNumber",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackNameNumber"
+  },
+  {
+    "id": 18,
+    "template": "Type the missing numbers in this sequence",
+    "generator_engine": "GenCompleteSequence",
+    "render_engine": "RenderCompleteSequence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompleteSequence"
+  },
+  {
+    "id": 19,
+    "template": "Count the [atom]s",
+    "generator_engine": "GenCountTenOnes",
+    "render_engine": "RenderCountTenOnes",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountTenOnes"
+  },
+  {
+    "id": 20,
+    "template": "How many [atom]s are there?",
+    "generator_engine": "GenCountToLargeNumber",
+    "render_engine": "RenderCountToLargeNumber",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountToLargeNumber"
+  },
+  {
+    "id": 21,
+    "template": "Fill in the missing number",
+    "generator_engine": "GenCountOnHundredChart",
+    "render_engine": "RenderCountOnHundredChart",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountOnHundredChart"
+  },
+  {
+    "id": 22,
+    "template": "How many [atom]s are there?",
+    "generator_engine": "GenCountGroupsOfTen",
+    "render_engine": "RenderCountGroupsOfTen",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountGroupsOfTen"
+  },
+  {
+    "id": 23,
+    "template": "Count by [number]s. Click each pair of [atom]s to keep track as you count",
+    "generator_engine": "GenLearnSkipCountByNumber",
+    "render_engine": "RenderLearnSkipCountByNumber",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackLearnSkipCountByNumber"
+  },
+  {
+    "id": 24,
+    "template": "Count the [atom]s by [number]s",
+    "generator_engine": "GenSkipCountByNumber",
+    "render_engine": "RenderSkipCountByNumber",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSkipCountByNumber"
+  },
+  {
+    "id": 25,
+    "template": "Are there enough [atom]s for every [atom-container]",
+    "generator_engine": "GenAreThereEnough",
+    "render_engine": "RenderAreThereEnough",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAreThereEnough"
+  },
+  {
+    "id": 26,
+    "template": "Which group has [type]?",
+    "generator_engine": "GenFewerOrMore",
+    "render_engine": "RenderFewerOrMoreByMatching",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackFewerOrMore"
+  },
+  {
+    "id": 27,
+    "template": "Which group has [type]?",
+    "generator_engine": "GenFewerOrMore",
+    "render_engine": "RenderFewerOrMoreByCounting",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackFewerOrMore"
+  },
+  {
+    "id": 28,
+    "template": "Are there [type] [atom]s or [atom]s?",
+    "generator_engine": "GenFewerOrMoreInMixed",
+    "render_engine": "RenderFewerOrMoreInMixed",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackFewerOrMoreInMixed"
+  },
+  {
+    "id": 29,
+    "template": "Which number is [type]?",
+    "generator_engine": "GenCompareTwoNumbers",
+    "render_engine": "RenderCompareTwoNumbers",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompareTwoNumbers"
+  },
+  {
+    "id": 30,
+    "template": "Which number is [type]?",
+    "generator_engine": "GenCompareThreeNumbers",
+    "render_engine": "RenderCompareThreeNumbers",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompareThreeNumbers"
+  },
+  {
+    "id": 31,
+    "template": "Copy the pattern.",
+    "generator_engine": "GenCopyRepeatPattern",
+    "render_engine": "RenderCopyPattern",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCopyPattern"
+  },
+  {
+    "id": 32,
+    "template": "Find the next shape in a pattern.",
+    "generator_engine": "GenNextShapeInRepeatPattern",
+    "render_engine": "RenderCompletePattern",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompletePattern"
+  },
+  {
+    "id": 33,
+    "template": "Use the shapes to continue the pattern.",
+    "generator_engine": "GenContinueRepeatPattern",
+    "render_engine": "RenderCompletePattern",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackContinuePattern"
+  },
+  {
+    "id": 34,
+    "template": "Copy the pattern.",
+    "generator_engine": "GenCopyGrowingPattern",
+    "render_engine": "RenderCopyPattern",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackGrowingPattern"
+  },
+  {
+    "id": 35,
+    "template": "What shape comes next?",
+    "generator_engine": "GenNextShapeInGrowingPattern",
+    "render_engine": "RenderCompletePattern",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompletePattern"
+  },
+  {
+    "id": 36,
+    "template": "What row comes next in the pattern?",
+    "generator_engine": "GenContinueGrowingPattern",
+    "render_engine": "RenderCompletePatternInRow",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompletePatternInRow"
+  },
+  {
+    "id": 37,
+    "template": "Which picture shows the [atom]s [type] the [atom-container]",
+    "generator_engine": "GenChoosePictureInsideOutside",
+    "render_engine": "RenderChooseInsideOutside",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackInsideOutside"
+  },
+  {
+    "id": 38,
+    "template": "Which object is [type] the table?",
+    "generator_engine": "GenSelectObjectInPosition",
+    "render_engine": "RenderSelectObjectInPosition",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSelectObjectInPosition"
+  },
+  {
+    "id": 39,
+    "template": "What is on the [type]?",
+    "generator_engine": "GenChoosePictureInPosition",
+    "rendering_engine": "RenderChoosePictureInPosition",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackChoosePictureInPosition"
+  },
+  {
+    "id": 40,
+    "template": "Choose the shape in [type]",
+    "generator_engine": "GenChooseShapeInGrid",
+    "render_engine": "RenderChooseShapeInGrid",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackChooseShapeInGrid"
+  },
+  {
+    "id": 41,
+    "template": "Which [atom] is [type]?",
+    "generator_engine": "GenMeasureLength",
+    "render_engine": "RenderMeasureLength",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMeasureLength"
+  },
+  {
+    "id": 42,
+    "template": "Which is [type]?",
+    "generator_engine": "GenMeasureMass",
+    "render_engine": "RenderChoosePicture",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMeasureMass"
+  },
+  {
+    "id": 43,
+    "template": "Which [atom] holds [type]?",
+    "generator_engine": "GenMeasureSize",
+    "render_engine": "RenderMeasureSize",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMeasureSize"
+  },
+  {
+    "id": 44,
+    "template": "Use [atom] to measure the [atom].",
+    "generator_engine": "GenMeasureLengthByObject",
+    "render_engine": "RenderMeasureLengthByObject",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMeasurelengthByObject"
+  },
+  {
+    "id": 45,
+    "template": "Add:",
+    "generator_engine": "GenAddWithPicture",
+    "render_engine": "RenderAddWithPicture",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAddWithPicture"
+  },
+  {
+    "id": 46,
+    "template": "Which picture shows [sentence]?",
+    "generator_engine": "GenAdditionSentence",
+    "render_engine": "RenderAdditionSentence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAdditionSentence"
+  },
+  {
+    "id": 47,
+    "template": "How do you make [number]?",
+    "generator_engine": "GenMakeNumberByAddition",
+    "render_engine": "RenderMakeNumberByAddition",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMakeNumberByAddition"
+  },
+  {
+    "id": 48,
+    "template": "Add:",
+    "generate_engine": "GenAddTwoNumber",
+    "render_engine": "RenderAddTwoNumber",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAddTwoNumber"
+  },
+  {
+    "id": 49,
+    "template": "Fill in the missing number",
+    "generator_engine": "GenCompleteAdditionSentence",
+    "render_engine": "RenderCompleteAdditionSentence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompleteAdditionSentence"
+  },
+  {
+    "id": 50,
+    "template": "[sentence]",
+    "generator_engine": "GenAdditionWordProblem",
+    "render_engine": "RenderAdditionWordProblem",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAdditionWordProblem"
+  },
+  {
+    "id": 51,
+    "template": "Write this as an addition number sentence(using + and =)",
+    "generator_engine": "GenWriteAdditionSentence",
+    "render_engine": "RenderWriteAdditionSentence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackWriteAdditionSentence"
+  },
+  {
+    "id": 52,
+    "template": "Subtract:",
+    "generator_engine": "GenSubtractWithPicture",
+    "render_engine": "RenderSubtractWithPicture",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSubtractWithPicture"
+  },
+  {
+    "id": 53,
+    "template": "Which picture shows [sentence]",
+    "generator_engine": "GenSubtractSentence",
+    "render_engine": "RenderSubtractSentence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSubtractSentence"
+  },
+  {
+    "id": 54,
+    "template": "Subtract:",
+    "generator_engine": "GenSubtract",
+    "render_engine": "RenderSubtract",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSubtract"
+  },
+  {
+    "id": 55,
+    "template": "Fill in the missing number.",
+    "generator_engine": "GenCompleteSubtractionSentence",
+    "render_engine": "RenderCompleteSubtractionSentence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompleteSubtractionSentence"
+  },
+  {
+    "id": 56,
+    "template": "[sentence]",
+    "generator_engine": "GenSubtractionWordProblem",
+    "render_engine": "RenderSubtractionWordProblem",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSubtractionWordProblem"
+  },
+  {
+    "id": 57,
+    "template": "Which figure shows [type]?",
+    "generator_engine": "GenIdentifyFraction",
+    "render_engine": "RenderIdentifyFraction",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackIdentifyFraction"
+  },
+  {
+    "id": 58,
+    "template": "Select all the pictures that show equal parts",
+    "generator_engine": "GenEqualParts",
+    "render_engine": "RenderEqualParts",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackEqualParts"
+  },
+  {
+    "id": 59,
+    "template": "What time does the clock show?",
+    "generator_engine": "GenClockAndTimeChoice",
+    "render_engine": "RenderAnalogueClockAndTimeChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAnalogueClockAndTime"
+  },
+  {
+    "id": 60,
+    "template": "Which clock shows [time]?",
+    "generator_engine": "GenClockAndTimeChoice",
+    "render_engine": "RenderDigitalClockAndTimeChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackDigitalClockAndTimeChoice"
+  },
+  {
+    "id": 61,
+    "template": "What time does the clock show?",
+    "generator_engine": "GenClockAndTime",
+    "render_engine": "RenderReadClockAndWrite",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackReadClockAndWrite"
+  },
+  {
+    "id": 62,
+    "template": "Look at the [clock_type]: Which [clock_type] shows the same time?",
+    "generator_engine": "GenClockAndClockChoice",
+    "render_engine": "RenderClockAndClockChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackClockAndClockChoice"
+  },
+  {
+    "id": 63,
+    "template": "[sentence]. The clock shows:",
+    "generator_engine": "GenAMAndPMChoice",
+    "render_engine": "RenderAMAndPMChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackAMAndPMChoice"
+  },
+  {
+    "id": 64,
+    "template": "[sentence]. What time is it?",
+    "generator_engine": "GenEventAndTimeChoice",
+    "render_engine": "RenderEventAndTimeChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackEventAndTimeChoice"
+  },
+  {
+    "id": 65,
+    "template": "[sentence]. Which day comes after [day]?",
+    "generator_engine":"GenWeekdayChoice",
+    "render_engine": "RenderWeekdayChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackWeekdayChoice"
+  },
+  {
+    "id": 66,
+    "template": "What season comes right [type] [season]?",
+    "generator_engine": "GenSeasonChoice",
+    "render_engine": "RenderSeasonChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSeasonChoice"
+  },
+  {
+    "id": 67,
+    "template": "What two shapes are exactly the same?",
+    "generator_engine": "GenSameShapeInGroup",
+    "render_engine": "RenderSameShapeInGroup",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSameShapeInGroup"
+  },
+  {
+    "id": 68,
+    "template": "Which shape is different?",
+    "generator_engine": "GenDifferentShapeInGroup",
+    "render_engine": "RenderDifferentShapeInGroup",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackDifferentShapeInGroup"
+  },
+  {
+    "id": 69,
+    "template": "Select all the objects that have the same shape as the one:",
+    "generator_engine": "GenSameShapeChoice",
+    "render_engine": "RenderSameShapeChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSameShapeChoice"
+  },
+  {
+    "id": 70,
+    "template": "Which [shape] is [colour]?",
+    "generator_engine": "GenClassifyShapeByColour",
+    "render_engine": "RenderClassifyShapeByColour",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackClassifyShapeByColour"
+  },
+  {
+    "id": 71,
+    "template": "Sort the [shape].",
+    "generator_engine": "GenSortShape",
+    "render_engine": "RenderSortShape",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSortShape"
+  },
+  {
+    "id": 72,
+    "template": "Put the shapes into Venn diagram.",
+    "generator_engine": "GenSortShapeInVennDiagram",
+    "render_engine": "RenderSortShapeInVennDiagram",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSortShapeInVennDiagram"
+  },
+  {
+    "id": 73,
+    "template": "How many shapes are [sort]?",
+    "generator_engine": "GenCountShapesInVennDiagram",
+    "render_engine": "RenderCountShapesInVennDiagram",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountShapesInVennDiagram"
+  },
+  {
+    "id": 74,
+    "template": "Put these numbers in order from [type_1] to [type_2]",
+    "generator_engine": "GenPutNumbersInOrder",
+    "render_engine": "RenderPutNumbersInOrder",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackPutNumbersInOrder"
+  },
+  {
+    "id": 75,
+    "template": "Look at the picture.",
+    "generator_engine": "GenGraphChoice",
+    "render_engine": "RenderGraphChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackGraphChoice"
+  },
+  {
+    "id": 76,
+    "template": "[sentence]",
+    "generator_engine": "GenProbability",
+    "render_engine": "RenderProbability",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackProbability"
+  },
+  {
+    "id": 77,
+    "template": "How much is this coin worth?",
+    "generator_engine": "GenCoinValue",
+    "render_engine": "RenderCoinValue",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCoinValue"
+  },
+  {
+    "id": 78,
+    "template": "How much money is there?",
+    "generator_engine": "GenCountMoney",
+    "render_engine": "RenderCountMoney",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountMoney"
+  },
+  {
+    "id": 79,
+    "template": "Look at these coins:",
+    "generator_engine": "GenEquivalentCoinGroupChoice",
+    "render_engine": "RenderEquivalentCoinGroupChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackEquivalentCoinGroupChoice"
+  },
+  {
+    "id": 80,
+    "template": "How many [money] coins can you get for the [coin_unit] coins?",
+    "generator_engine": "GenExchangeCoinGroup",
+    "render_engine": "RenderExchangeCoinGroup",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackExchangeCoinGroup"
+  },
+  {
+    "id": 81,
+    "template": "Type the correct number in the blank.",
+    "generator_engine": "GenExchangeCoins",
+    "render_engine": "RenderExchangeCoins",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackExchangeCoins"
+  },
+  {
+    "id": 82,
+    "template": "Which is more?",
+    "generator_engine": "GenCompareTwoCoinGroups",
+    "render_engine": "RenderCompareTwoCoinGroups",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompareTwoCoinGroups"
+  },
+  {
+    "id": 83,
+    "template": "What shape is this?",
+    "generator_engine": "GenShapeNameChoice",
+    "render_engine": "RenderShapeNameChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackShapeNameChoice"
+  },
+  {
+    "id": 84,
+    "template": "What shape is [type]?",
+    "generator_engine": "GenShapeChoice",
+    "render_engine": "RenderShapeChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackShapeChoice"
+  },
+  {
+    "id": 85,
+    "template": "How many [type] does this shape have?",
+    "generator_engine": "GenCountSideAndCorners",
+    "render_engine": "RenderCountSideAndCorners",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCountSideAndCorners"
+  },
+  {
+    "id": 86,
+    "template": "Which shape has more [compare] [type]?",
+    "generator_engine": "GenCompareSideAndCorners",
+    "render_engine": "RenderCompareSideAndCorners",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackCompareSideAndCorners"
+  },
+  {
+    "id": 87,
+    "template": "Does this picture have symmetry?",
+    "generator_engine": "GenSymmetryIntroduction",
+    "render_engine": "RenderSymmetryIntroduction",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSymmetryIntroduction"
+  },
+  {
+    "id": 88,
+    "template": "Which picture has symmetry?",
+    "generator_engine": "GenSymmetryChoice",
+    "render_engine": "RenderSymmetryChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSymmetryChoice"
+  },
+  {
+    "id": 89,
+    "template": "Is this shape two-dimensional or three-dimensional?",
+    "generator_engine": "GenShapeToDimensionChoice",
+    "render_engine": "RenderShapeToDimensionChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackShapeToDimensionChoice"
+  },
+  {
+    "id": 90,
+    "template": "Which shape is two-dimensional?",
+    "generator_engine": "GenDimensionToShapeChoice",
+    "render_engine": "RenderDimensionToShapeChoice",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackDimensionToShapeChoice"
+  },
+  {
+    "id": 91,
+    "template": "Can you trace a [shape] with this shape?",
+    "generator_engine": "GenTraceShape",
+    "render_engine": "RenderTraceShape",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackTraceShape"
+  },
+  {
+    "id": 92,
+    "template": "What items are shaped like [shape]?",
+    "generator_engine": "GenEverydayShapeChoice1",
+    "render_engine": "RenderEverydayShapeChoice1",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackEverydayShapeChoice1"
+  },
+  {
+    "id": 93,
+    "template": "What object are shaped like [shape]?",
+    "generator_engine": "GenEverydayShapeChoice2",
+    "render_engine": "RenderEverydayShapeChoice2",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackEverydayShapeChoice2"
+  },
+  {
+    "id": 94,
+    "template": "In this problem what is [value]?",
+    "generator_engine": "GenSumAndDifference",
+    "render_engine": "RenderSumAndDifference",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackSumAndDifference"
+  },
+  {
+    "id": 95,
+    "template": "There are [number] dots on the frame A full frame has 10 dots.",
+    "generator_engine": "GenFillShapeInFrame",
+    "render_engine": "RenderFillShapeInFrame",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackFillShapeInFrame"
+  },
+  {
+    "id": 96,
+    "template": "Put [number] [shape] on the frame",
+    "generator_engine": "GenShapeInFrame",
+    "render_engine": "RenderPutShapeOnFrame",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackPutShapeOnFrame"
+  },
+  {
+    "id": 97,
+    "template": "Are there [type] [atom] than [atom]?",
+    "generator_engine": "GenFewerOrMore",
+    "render_engine": "RenderFewerMoreSame",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackFewerMoreSame"
+  },
+  {
+    "id": 98,
+    "template": "[sentence]",
+    "generator_engine": "GenWriteSubtractionSentence",
+    "render_engine": "RenderWriteSubtractionSentence",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackWriteSubtractionSentence"
+  },
+  {
+    "id": 99,
+    "template": "How do you make [number]",
+    "generator_engine": "GenMakeNumberBySubtraction",
+    "render_engine": "RenderMakeNumberBySubtraction",
+    "scoring_engine": "ScoreSimpleMatch",
+    "feedback_engine": "FeedbackMakeNumberBySubtraction"
+  }
+]

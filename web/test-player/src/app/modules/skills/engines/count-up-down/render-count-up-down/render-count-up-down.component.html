@@ -1,0 +1,13 @@
+<div class="section">
+    Counting <b>{{countType}}</b> from <b>{{number}}</b>, which number comes next?
+</div>
+
+<div class="section">
+    <div class="counting-input">
+        <input type="text" [(ngModel)]="question.response.value">
+    </div>
+</div>
+
+<div class="section">
+    <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

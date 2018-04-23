@@ -1,0 +1,180 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+      <div class="tile-multiple-choices visible">
+        <div class="tile-cover"></div>
+        <div class="grid-layout top">
+          <div class="selectable-tile disable no-interact" *ngFor="let color of renderOptions.colors"
+               [ngClass]="{'selected': question.validation.valid_response.value == color}"
+               [ngStyle]="{'width': '150px', 'height': '50px'}"
+          >
+            <div class="tile-skin-bare center middle">
+              {{color}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="">
+        <div class="section">
+          What color is the {{renderOptions.problem|toWordsOrdinal}} square?
+        </div>
+
+        <div class="section">
+          <table class="ordinal-numbers-table large">
+            <tbody>
+            <tr>
+              <td class="text-block" *ngFor="let color of renderOptions.square_colors; let i = index">
+                <b>{{i == 0 ? 'first': (i == renderOptions.square_colors.length - 1 ? 'last' : '')}}</b>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ordinal-color-box" [bgColor]="color"
+                  *ngFor="let color of renderOptions.square_colors;">
+                <div class="ordinal-box-sizing">
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+        <div class="section">
+          <div class="tile-multiple-choices visible">
+            <div class="tile-cover"></div>
+            <div class="grid-layout top">
+              <div class="selectable-tile no-interact" *ngFor="let color of renderOptions.colors"
+                   [ngStyle]="{'width': '150px', 'height': '50px'}"
+              >
+                <div class="tile-skin-bare center middle">
+                  {{color}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class = "answer-header">
+        You answered:
+      </div>
+      <div class="">
+        <div class="tile-multiple-choices visible">
+          <div class="tile-cover"></div>
+          <div class="grid-layout top">
+            <div class="selectable-tile disable no-interact" *ngFor="let color of renderOptions.colors"
+                 [ngStyle]="{'width': '150px', 'height': '50px'}"
+                 [ngClass]="{'selected': question.response.value == color}"
+            >
+              <div class="tile-skin-bare center middle">
+                {{color}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="section">
+        Look for the first square.
+      </div>
+
+      <div class="section">
+        <table class="ordinal-numbers-table large">
+          <tbody>
+          <tr>
+            <td class="text-block" *ngFor="let color of renderOptions.square_colors; let i = index">
+              <b>{{i == 0 ? 'first': (i == renderOptions.colors.length - 1 ? 'last' : '')}}</b>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="ordinal-color-box" [bgColor]="color"
+                *ngFor="let color of renderOptions.square_colors;">
+              <div class="ordinal-box-sizing">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td *ngFor="let color of renderOptions.square_colors; let i=index">
+              <div class="text-block" *ngIf="i==0">
+                <img src="/assets/black_up_50.gif">
+              </div>
+            </td>
+          </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <div class="section">
+        Count from the first square to find the {{renderOptions.problem|toWordsOrdinal}} square
+      </div>
+
+      <div class="section">
+        <table class="ordinal-numbers-table large">
+          <tbody>
+          <tr>
+            <td class="text-block" *ngFor="let color of renderOptions.square_colors; let i = index">
+              {{i + 1|toWordsOrdinal}}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="ordinal-color-box" [bgColor]="color"
+                *ngFor="let color of renderOptions.square_colors;let i=index">
+              <div class="ordinal-box-sizing">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td *ngFor="let color of renderOptions.square_colors;let i=index">
+              <div class="text-block" *ngIf="i==renderOptions.problem - 1">
+                <img src="/assets/black_up_50.gif">
+              </div>
+            </td>
+          </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+      <div class="section">
+        The {{renderOptions.problem|toWordsOrdinal}} square is {{question.validation.valid_response.value}}
+      </div>
+    </div>
+  </div>
+</div>

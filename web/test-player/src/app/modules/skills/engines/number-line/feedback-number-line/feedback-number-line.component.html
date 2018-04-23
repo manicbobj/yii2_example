@@ -1,0 +1,115 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+      <input type="text" class="tick-fill-in" disabled [ngModel]="question.validation.valid_response.value">
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (cick)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box" #container>
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+
+    <div class="tab-box-bd">
+      <div class="section">
+        Type the missing number.
+      </div>
+      <div class="section relative-container">
+        <canvas #reviewCanvas></canvas>
+        <div align="center" *ngFor="let number of numbers; index as i"
+             style="position: absolute; text-align: center;"
+             [style.width] = "labelWidth + 'px'"
+             [style.height]="labelHeight + 'px'"
+             [style.top]="labelTop + 'px'"
+             [style.left]="stepSize * (i + 1) - labelWidth / 2 + 'px'">
+
+          <input class="tick-fill-in" title="Fill in missing number" type="text"
+                 disabled
+                 *ngIf="number == missing">
+
+          <span *ngIf="number != missing">
+            {{number}}
+          </span>
+
+        </div>
+      </div>
+      <div class="section">
+        <div class="answer-header">
+          You answered:
+        </div>
+        <div>
+          <input type="text" class="tick-fill-in" disabled [ngModel]="question.response.value">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="section">
+        <ng-container *ngIf="missing == from">
+          Find the number that comes before {{missing + 1}}.
+          You can start at {{missing + 1}} and count down.
+        </ng-container>
+        <ng-container *ngIf="missing == to">
+          Find the number that comes after {{missing - 1}}.
+          You can start at {{missing - 1}} and count up.
+        </ng-container>
+        <ng-container *ngIf="missing != from && missing != to">
+          Find the number that comes between {{missing - 1}} and {{missing + 1}}.
+          You can start at {{missing - 1}} and count up.
+        </ng-container>
+
+      </div>
+      <div class="section">
+        <ng-container *ngIf="missing == from">
+          {{missing}} comes before {{missing + 1}}.
+        </ng-container>
+        <ng-container *ngIf="missing == to">
+          {{missing}} comes after {{missing - 1}}
+        </ng-container>
+        <ng-container *ngIf="missing != from && missing != to">
+          {{missing}} comes between {{missing - 1}} and {{missing + 1}}
+        </ng-container>
+      </div>
+      <div class="section relative-container">
+        <canvas #solveCanvas></canvas>
+        <div align="center" *ngFor="let number of numbers; index as i"
+             style="position: absolute; text-align: center;"
+             [style.width] = "labelWidth + 'px'"
+             [style.height]="labelHeight + 'px'"
+             [style.top]="labelTop + 'px'"
+             [style.left]="stepSize * (i + 1) - labelWidth / 2 + 'px'">
+
+          <span>
+            {{number}}
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="next-question">
+    <button class="btn btn-success btn-large" (click)="submit()">
+      Try next
+    </button>
+  </div>
+</div>

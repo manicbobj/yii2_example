@@ -1,0 +1,1673 @@
+[
+  {
+    "field": "math",
+    "title": "Learn to count to 3",
+    "grade": "foundation",
+    "question_types": [1],
+    "order": 1,
+    "difficulty": 3,
+    "section_id": 1,
+    "id": 1
+  },
+  {
+    "field": "math",
+    "title": "Count to 3",
+    "grade": "foundation",
+    "question_types": [2],
+    "order": 2,
+    "difficulty": 3,
+    "section_id": 1,
+    "id": 2
+  },
+  {
+    "field": "math",
+    "title": "Count using stickers - up to 3",
+    "grade": "foundation",
+    "question_types": [3],
+    "order": 3,
+    "difficulty": 3,
+    "section_id": 1,
+    "id": 3
+  },
+  {
+    "field": "math",
+    "title": "Count on ten frames - up to 3",
+    "grade": "foundation",
+    "question_types": [4],
+    "order": 4,
+    "difficulty": 3,
+    "section_id": 1,
+    "id": 4
+  },
+  {
+    "field": "math",
+    "title": "Represent numbers - up to 3",
+    "grade": "foundation",
+    "question_types": [5],
+    "order": 5,
+    "difficulty": 3,
+    "section_id": 1,
+    "id": 5
+  },
+  {
+    "field": "math",
+    "title": "Ordinal numbers - up to third",
+    "grade": "foundation",
+    "question_types": [6],
+    "order": 6,
+    "difficulty": 3,
+    "section_id": 1,
+    "id": 6
+  },
+  {
+    "field": "math",
+    "title": "Learning to count to 5",
+    "grade": "foundation",
+    "question_types": [1],
+    "order": 1,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 7
+  },
+  {
+    "field": "math",
+    "title": "Count to 5",
+    "grade": "foundation",
+    "question_types": [2],
+    "order": 2,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 8
+  },
+  {
+    "field": "math",
+    "title": "Count using stickers - up to 5",
+    "grade": "foundation",
+    "question_types": [3],
+    "order": 3,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 9
+  },
+  {
+    "field": "math",
+    "title": "Count on ten frames - up to 5",
+    "grade": "foundation",
+    "question_types": [4],
+    "order": 4,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 10
+  },
+  {
+    "field": "math",
+    "title": "Represent numbers - up to 5",
+    "grade": "foundation",
+    "question_types": [5],
+    "order": 5,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 11
+  },
+  {
+    "field": "math",
+    "title": "One more - up to 5",
+    "grade": "foundation",
+    "question_types": [7],
+    "order": 6,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 12
+  },
+  {
+    "field": "math",
+    "title": "Count one more - up to 5",
+    "grade": "foundation",
+    "question_types": [9],
+    "order": 7,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 13
+  },
+  {
+    "field": "math",
+    "title": "One less - up to 5",
+    "grade": "foundation",
+    "question_types": [8],
+    "order": 8,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 14
+  },
+  {
+    "field": "math",
+    "title": "Count one less - up to 5",
+    "grade": "foundation",
+    "question_types": [10],
+    "order": 9,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 15
+  },
+  {
+    "field": "math",
+    "title": "Ordinal numbers - up to fifth",
+    "grade": "foundation",
+    "question_types": [6],
+    "order": 10,
+    "difficulty": 5,
+    "section_id": 2,
+    "id": 16
+  },
+  {
+    "field": "math",
+    "title": "Learn to count to 10",
+    "grade": "foundation",
+    "question_types": [1],
+    "order": 1,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 17
+  },
+  {
+    "field": "math",
+    "title": "Count to 10",
+    "grade": "foundation",
+    "question_types": [2],
+    "order": 2,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 18
+  },
+  {
+    "field": "math",
+    "title": "Count using stickers - up to 10",
+    "grade": "foundation",
+    "question_types": [3],
+    "order": 3,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 19
+  },
+  {
+    "field": "math",
+    "title": "Count on ten frames - up to 10",
+    "grade": "foundation",
+    "question_types": [4],
+    "order": 4,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 20
+  },
+  {
+    "field": "math",
+    "title": "Represent numbers - up to 5",
+    "grade": "foundation",
+    "question_types": [5],
+    "order": 5,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 21
+  },
+  {
+    "field": "math",
+    "title": "One more - up to 10",
+    "grade": "foundation",
+    "question_types": [7],
+    "order": 6,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 22
+  },
+  {
+    "field": "math",
+    "title": "Count one more - up to 10",
+    "grade": "foundation",
+    "question_types": [9],
+    "order": 7,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 23
+  },
+  {
+    "field": "math",
+    "title": "One less - up to 10",
+    "grade": "foundation",
+    "question_types": [8],
+    "order": 8,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 24
+  },
+  {
+    "field": "math",
+    "title": "Count one less - up to 10",
+    "grade": "foundation",
+    "question_types": [10],
+    "order": 9,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 25
+  },
+  {
+    "field": "math",
+    "title": "One more and one less - up to 10",
+    "grade": "foundation",
+    "question_types": [7, 8],
+    "order": 10,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 26
+  },
+  {
+    "field": "math",
+    "title": "Count one more and one less - up to 10",
+    "grade": "foundation",
+    "question_types": [9, 10],
+    "order": 11,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 27
+  },
+  {
+    "field": "math",
+    "title": "Count up and down - with numbers",
+    "grade": "foundation",
+    "question_types": [11, 12],
+    "order": 12,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 28
+  },
+  {
+    "field": "math",
+    "title": "Count to fill a ten frame",
+    "grade": "foundation",
+    "question_types": [95],
+    "order": 13,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 29
+  },
+  {
+    "field": "math",
+    "title": "Tally marks - up to 10",
+    "grade": "foundation",
+    "question_types": [13],
+    "order": 14,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 30
+  },
+  {
+    "field": "math",
+    "title": "Number lines - up to 10",
+    "grade": "foundation",
+    "question_types": [14],
+    "order": 15,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 31
+  },
+  {
+    "field": "math",
+    "title": "Before, after and between - up to 10",
+    "grade": "foundation",
+    "question_types": [15],
+    "order": 16,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 32
+  },
+  {
+    "field": "math",
+    "title": "Count forward and backward - up to 10",
+    "grade": "foundation",
+    "question_types": [16],
+    "order": 17,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 33
+  },
+  {
+    "field": "math",
+    "title": "Names of numbers - up to 10",
+    "grade": "foundation",
+    "question_types": [17],
+    "order": 18,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 34
+  },
+  {
+    "field": "math",
+    "title": "Complete a sequence - up to 10",
+    "grade": "foundation",
+    "question_types": [18],
+    "order": 19,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 35
+  },
+  {
+    "field": "math",
+    "title": "Ordinal numbers - up to tenth",
+    "grade": "foundation",
+    "question_types": [6],
+    "order": 20,
+    "difficulty": 10,
+    "section_id": 3,
+    "id": 36
+  },
+  {
+    "field": "math",
+    "title": "Count to 20",
+    "grade": "foundation",
+    "question_types": [20],
+    "order": 1,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 37
+  },
+  {
+    "field": "math",
+    "title": "Count on ten frames - up to 20",
+    "grade": "foundation",
+    "question_types": [4],
+    "order": 2,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 38
+  },
+  {
+    "field": "math",
+    "title": "Show numbers on ten frames - up to 20",
+    "grade": "foundation",
+    "question_types": [96],
+    "order": 3,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 39
+  },
+  {
+    "field": "math",
+    "title": "Represent numbers - up to 20",
+    "grade": "foundation",
+    "question_types": [5],
+    "order": 4,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 40
+  },
+  {
+    "field": "math",
+    "title": "Count up and down",
+    "grade": "foundation",
+    "question_types": [11],
+    "order": 5,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 41
+  },
+  {
+    "field": "math",
+    "title": "Tally marks - up to 20",
+    "grade": "foundation",
+    "question_types": [13],
+    "order": 6,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 42
+  },
+  {
+    "field": "math",
+    "title": "Number lines - up to 20",
+    "grade": "foundation",
+    "question_types": [14],
+    "order": 7,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 43
+  },
+  {
+    "field": "math",
+    "title": "Before, after and between - up to 20",
+    "grade": "foundation",
+    "question_types": [15],
+    "order": 8,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 44
+  },
+  {
+    "field": "math",
+    "title": "Count forward and backward - up to 20",
+    "grade": "foundation",
+    "question_types": [16],
+    "order": 9,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 45
+  },
+  {
+    "field": "math",
+    "title": "Names of numbers - up to 20",
+    "grade": "foundation",
+    "question_types": [17],
+    "order": 10,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 46
+  },
+  {
+    "field": "math",
+    "title": "Complete a sequence - up to 20",
+    "grade": "foundation",
+    "question_types": [18],
+    "order": 11,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 47
+  },
+  {
+    "field": "math",
+    "title": "Count tens and ones - up to 20",
+    "grade": "foundation",
+    "question_types": [19],
+    "order": 12,
+    "difficulty": 20,
+    "section_id": 4,
+    "id": 48
+  },
+  {
+    "field": "math",
+    "title": "Count on ten frames - up to 30",
+    "grade": "foundation",
+    "question_types": [4],
+    "order": 1,
+    "difficulty": 30,
+    "section_id": 5,
+    "id": 49
+  },
+  {
+    "field": "math",
+    "title": "Count to 100",
+    "grade": "foundation",
+    "question_types": [20],
+    "order": 2,
+    "difficulty": 100,
+    "section_id": 5,
+    "id": 50
+  },
+  {
+    "field": "math",
+    "title": "Counting on the hundred chart",
+    "grade": "foundation",
+    "question_types": [21],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 5,
+    "id": 51
+  },
+  {
+    "field": "math",
+    "title": "Count groups of ten",
+    "grade": "foundation",
+    "question_types": [22],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 5,
+    "id": 52
+  },
+  {
+    "field": "math",
+    "title": "Number of lines - up to 30",
+    "grade": "foundation",
+    "question_types": [14],
+    "order": 5,
+    "difficulty": 30,
+    "section_id": 5,
+    "id": 53
+  },
+  {
+    "field": "math",
+    "title": "Count tens and ones - up to 30",
+    "grade": "foundation",
+    "question_types": [19],
+    "order": 6,
+    "difficulty": 30,
+    "section_id": 5,
+    "id": 54
+  },
+  {
+    "field": "math",
+    "title": "Learn to skip-count by twos",
+    "grade": "foundation",
+    "question_types": [23],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 55
+  },
+  {
+    "field": "math",
+    "title": "Skip-count by twos",
+    "grade": "foundation",
+    "question_types": [24],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 56
+  },
+  {
+    "field": "math",
+    "title": "Learn to skip-count by fives",
+    "grade": "foundation",
+    "question_types": [23],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 57
+  },
+  {
+    "field": "math",
+    "title": "Skip-count by fives",
+    "grade": "foundation",
+    "question_types": [24],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 58
+  },
+  {
+    "field": "math",
+    "title": "Learn to skip-count by tens",
+    "grade": "foundation",
+    "question_types": [23],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 59
+  },
+  {
+    "field": "math",
+    "title": "Skip count by tens",
+    "grade": "foundation",
+    "question_types": [24],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 60
+  },
+  {
+    "field": "math",
+    "title": "Learn to skip-count by twos, fives and tens",
+    "grade": "foundation",
+    "question_types": [23],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 61
+  },
+  {
+    "field": "math",
+    "title": "Skip-count by twos, fives and tens",
+    "grade": "foundation",
+    "question_types": [24],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 6,
+    "id": 62
+  },
+  {
+    "field": "math",
+    "title": "Are there enough",
+    "grade": "foundation",
+    "question_types": [25],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 63
+  },
+  {
+    "field": "math",
+    "title": "Fewer and more - compare by matching",
+    "grade": "foundation",
+    "question_types": [26],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 64
+  },
+  {
+    "field": "math",
+    "title": "Fewer and more - compare by counting",
+    "grade": "foundation",
+    "question_types": [27],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 65
+  },
+  {
+    "field": "math",
+    "title": "Fewer and more - compare in a mixed group",
+    "grade": "foundation",
+    "question_types": [28],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 66
+  },
+  {
+    "field": "math",
+    "title": "Fewer, more and same",
+    "grade": "foundation",
+    "question_types": [97],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 67
+  },
+  {
+    "field": "math",
+    "title": "Compare two numbers - up to 10",
+    "grade": "foundation",
+    "question_types": [29],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 68
+  },
+  {
+    "field": "math",
+    "title": "Compare three numbers - up to 10",
+    "grade": "foundation",
+    "question_types": [30],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 7,
+    "id": 69
+  },
+  {
+    "field": "math",
+    "title": "Colour patterns",
+    "grade": "foundation",
+    "question_types": [31],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 70
+  },
+  {
+    "field": "math",
+    "title": "Size patterns",
+    "grade": "foundation",
+    "question_types": [31],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 71
+  },
+  {
+    "field": "math",
+    "title": "Shape patterns",
+    "grade": "foundation",
+    "question_types": [31],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 72
+  },
+  {
+    "field": "math",
+    "title": "Find the next shape in a pattern",
+    "grade": "foundation",
+    "question_types": [32],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 73
+  },
+  {
+    "field": "math",
+    "title": "Complete a pattern",
+    "grade": "foundation",
+    "question_types": [33],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 74
+  },
+  {
+    "field": "math",
+    "title": "Growing patterns",
+    "grade": "foundation",
+    "question_types": [34],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 75
+  },
+  {
+    "field": "math",
+    "title": "Find the next shape in a growing pattern",
+    "grade": "foundation",
+    "question_types": [35],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 76
+  },
+  {
+    "field": "math",
+    "title": "Find the next row in a growing pattern",
+    "grade": "foundation",
+    "question_types": [36],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 8,
+    "id": 77
+  },
+  {
+    "field": "math",
+    "title": "Inside and outside",
+    "grade": "foundation",
+    "question_types": [37],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 78
+  },
+  {
+    "field": "math",
+    "title": "Above and below",
+    "grade": "foundation",
+    "question_types": [38],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 79
+  },
+  {
+    "field": "math",
+    "title": "Above and below - find solid figures",
+    "grade": "foundation",
+    "question_types": [38],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 80
+  },
+  {
+    "field": "math",
+    "title": "Beside and next to",
+    "grade": "foundation",
+    "question_types": [38],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 81
+  },
+  {
+    "field": "math",
+    "title": "Beside and next to - find solid figures",
+    "grade": "foundation",
+    "question_types": [38],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 82
+  },
+  {
+    "field": "math",
+    "title": "Left, middle and right",
+    "grade": "foundation",
+    "question_types": [39],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 83
+  },
+  {
+    "field": "math",
+    "title": "Top, middle and bottom",
+    "grade": "foundation",
+    "question_types": [39],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 84
+  },
+  {
+    "field": "math",
+    "title": "Location in a grid",
+    "grade": "foundation",
+    "question_types": [40],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 9,
+    "id": 85
+
+  },
+  {
+    "field": "math",
+    "title": "Long and short",
+    "grade": "foundation",
+    "question_types": [41],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 10,
+    "id": 86
+  },
+  {
+    "field": "math",
+    "title": "Tall and short",
+    "grade": "foundation",
+    "question_types": [41],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 10,
+    "id": 87
+  },
+  {
+    "field": "math",
+    "title": "Light and heavy",
+    "grade": "foundation",
+    "question_types": [42],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 10,
+    "id": 88
+  },
+  {
+    "field": "math",
+    "title": "Holds more or less",
+    "grade": "foundation",
+    "question_types": [43],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 10,
+    "id": 89
+  },
+  {
+    "field": "math",
+    "title": "Compare size, mass and capacity",
+    "grade": "foundation",
+    "question_types": [41, 42, 43],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 10,
+    "id": 90
+  },
+  {
+    "field": "math",
+    "title": "Measure using objects",
+    "grade": "foundation",
+    "question_types": [44],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 10,
+    "id": 91
+  },
+  {
+    "field": "math",
+    "title": "Add with pictures - sums up to 5",
+    "grade": "foundation",
+    "question_types": [45],
+    "order": 1,
+    "difficulty": 5,
+    "section_id": 11,
+    "id": 92
+  },
+  {
+    "field": "math",
+    "title": "Addition sentences - sums up to 5",
+    "grade": "foundation",
+    "question_types": [46],
+    "order": 2,
+    "difficulty": 5,
+    "section_id": 11,
+    "id": 93
+  },
+  {
+    "field": "math",
+    "title": "Make a number using addition - sums up to 5",
+    "grade": "foundation",
+    "question_types": [47],
+    "order": 3,
+    "difficulty": 5,
+    "section_id": 11,
+    "id": 94
+  },
+  {
+    "field": "math",
+    "title": "Add two numbers - sums up to 5",
+    "grade": "foundation",
+    "question_types": [48],
+    "order": 4,
+    "difficulty": 5,
+    "section_id": 11,
+    "id": 95
+  },
+  {
+    "field": "math",
+    "title": "Complete the addition sentence - sums up to 5",
+    "grade": "foundation",
+    "question_types": [49],
+    "order": 5,
+    "difficulty": 5,
+    "section_id": 11,
+    "id": 96
+  },
+  {
+    "field": "math",
+    "title": "Addition word problems - sums up to 5",
+    "grade": "foundation",
+    "question_types": [50],
+    "order": 6,
+    "difficulty": 5,
+    "section_id": 11,
+    "id": 97
+  },
+  {
+    "field": "math",
+    "title": "Add with pictures - sums up to 10",
+    "grade": "foundation",
+    "question_types": [],
+    "order": 1,
+    "difficulty": 10,
+    "section_id": 12,
+    "id": 98
+  },
+  {
+    "field": "math",
+    "title": "Addition sentences - sums up to 10",
+    "grade": "foundation",
+    "question_types": [46],
+    "order": 2,
+    "difficulty": 10,
+    "section_id": 12,
+    "id": 99
+  },
+  {
+    "field": "math",
+    "title": "Make a number using addition - sums up to 10",
+    "grade": "foundation",
+    "question_types": [47],
+    "order": 3,
+    "difficulty": 10,
+    "section_id": 12,
+    "id": 100
+  },
+  {
+    "field": "math",
+    "title": "Add two numbers - sums up to 10",
+    "grade": "foundation",
+    "question_types": [48],
+    "order": 4,
+    "difficulty": 10,
+    "section_id": 12,
+    "id": 101
+  },
+  {
+    "field": "math",
+    "title": "Complete the addition sentence - sums up to 10",
+    "grade": "foundation",
+    "question_types": [49],
+    "order": 5,
+    "difficulty": 10,
+    "section_id": 12,
+    "id": 102
+  },
+  {
+    "field": "math",
+    "title": "Complete the addition sentence - make ten",
+    "grade": "foundation",
+    "question_types": [49],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 12,
+    "id": 103
+  },
+  {
+    "field": "math",
+    "title": "Write addition sentences",
+    "grade": "foundation",
+    "question_types": [51],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 12,
+    "id": 104
+  },
+  {
+    "field": "math",
+    "title": "Addition word problems - sums up to 10",
+    "grade": "foundation",
+    "question_types": [50],
+    "order": 8,
+    "difficulty": 10,
+    "section_id": 12,
+    "id": 105
+  },
+  {
+    "field": "math",
+    "title": "Subtract with pictures - numbers up to 5",
+    "grade": "foundation",
+    "question_types": [52],
+    "order": 1,
+    "difficulty": 5,
+    "section_id": 13,
+    "id": 106
+  },
+  {
+    "field": "math",
+    "title": "Subtraction sentences - numbers up to 5",
+    "grade": "foundation",
+    "question_types": [53],
+    "order": 2,
+    "difficulty": 5,
+    "section_id": 13,
+    "id": 107
+  },
+  {
+    "field": "math",
+    "title": "Subtract - numbers up to 5",
+    "grade": "foundation",
+    "question_types": [54],
+    "order": 3,
+    "difficulty": 5,
+    "section_id": 13,
+    "id": 108
+  },
+  {
+    "field": "math",
+    "title": "Complete the subtraction sentence - numbers up to 5",
+    "grade": "foundation",
+    "question_types": [55],
+    "order": 4,
+    "difficulty": 5,
+    "section_id": 13,
+    "id": 109
+  },
+  {
+    "field": "math",
+    "title": "Subtraction word problems - numbers up to 5",
+    "grade": "foundation",
+    "question_types": [56],
+    "order": 5,
+    "difficulty": 5,
+    "section_id": 13,
+    "id": 110
+  },
+  {
+    "field": "math",
+    "title": "Subtract with pictures - numbers up to 10",
+    "grade": "foundation",
+    "question_types": [52],
+    "order": 1,
+    "difficulty": 10,
+    "section_id": 14,
+    "id": 111
+  },
+  {
+    "field": "math",
+    "title": "Subtraction sentences - numbers up to 10",
+    "grade": "foundation",
+    "question_types": [53],
+    "order": 2,
+    "difficulty": 10,
+    "section_id": 14,
+    "id": 112
+  },
+  {
+    "field": "math",
+    "title": "Make a number using subtraction - numbers up to 10",
+    "grade": "foundation",
+    "question_types": [99],
+    "order": 3,
+    "difficulty": 10,
+    "section_id": 14,
+    "id": 113
+  },
+  {
+    "field": "math",
+    "title": "Subtract - numbers up to 10",
+    "grade": "foundation",
+    "question_types": [54],
+    "order": 4,
+    "difficulty": 10,
+    "section_id": 14,
+    "id": 114
+  },
+  {
+    "field": "math",
+    "title": "Complete the subtraction sentence - numbers up to 10",
+    "grade": "foundation",
+    "question_types": [55],
+    "order": 5,
+    "difficulty": 10,
+    "section_id": 14,
+    "id": 115
+  },
+  {
+    "field": "math",
+    "title": "Write subtraction sentences",
+    "grade": "foundation",
+    "question_types": [98],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 14,
+    "id": 116
+  },
+  {
+    "field": "math",
+    "title": "Subtract with pictures - numbers up to 10",
+    "grade": "foundation",
+    "question_types": [52],
+    "order": 7,
+    "difficulty": 10,
+    "section_id": 14,
+    "id": 117
+  },
+  {
+    "field": "math",
+    "title": "Identify halves, thirds, quarters",
+    "grade": "foundation",
+    "question_types": [57],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 15,
+    "id": 118
+  },
+  {
+    "field": "math",
+    "title": "Equal parts",
+    "grade": "foundation",
+    "question_types": [58],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 15,
+    "id": 119
+  },
+  {
+    "field": "math",
+    "title": "Match analogue clocks and times",
+    "grade": "foundation",
+    "question_types": [59],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 120
+  },
+  {
+    "field": "math",
+    "title": "Match digital clocks and times",
+    "grade": "foundation",
+    "question_types": [60],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 121
+  },
+  {
+    "field": "math",
+    "title": "Match analogue and digital clocks",
+    "grade": "foundation",
+    "question_types": [62],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 122
+  },
+  {
+    "field": "math",
+    "title": "Read clocks and write times",
+    "grade": "foundation",
+    "question_types": [61],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 123
+  },
+  {
+    "field": "math",
+    "title": "A.M. or P.M.",
+    "grade": "foundation",
+    "question_types": [63],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 124
+  },
+  {
+    "field": "math",
+    "title": "Times of everyday events",
+    "grade": "foundation",
+    "question_types": [64],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 125
+  },
+  {
+    "field": "math",
+    "title": "Days of the week",
+    "grade": "foundation",
+    "question_types": [65],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 126
+  },
+  {
+    "field": "math",
+    "title": "Seasons",
+    "grade": "foundation",
+    "question_types": [66],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 16,
+    "id": 127
+  },
+  {
+    "field": "math",
+    "title": "Same",
+    "grade": "foundation",
+    "question_types": [67],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 128
+  },
+  {
+    "field": "math",
+    "title": "Different",
+    "grade": "foundation",
+    "question_types": [68],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 129
+  },
+  {
+    "field": "math",
+    "title": "Same and different",
+    "grade": "foundation",
+    "question_types": [67, 68],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 130
+  },
+  {
+    "field": "math",
+    "title": "Same shape",
+    "grade": "foundation",
+    "question_types": [69],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 131
+  },
+  {
+    "field": "math",
+    "title": "Classify shapes by colour",
+    "grade": "foundation",
+    "question_types": [70],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 132
+  },
+  {
+    "field": "math",
+    "title": "Classify and sort",
+    "grade": "foundation",
+    "question_types": [71],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 133
+  },
+  {
+    "field": "math",
+    "title": "Sort shapes into a Venn diagram",
+    "grade": "foundation",
+    "question_types": [72],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 134
+  },
+  {
+    "field": "math",
+    "title": "Count shapes in a Venn diagram",
+    "grade": "foundation",
+    "question_types": [73],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 17,
+    "id": 135
+  },
+  {
+    "field": "math",
+    "title": "Put numbers up to 10 in order",
+    "grade": "foundation",
+    "question_types": [74],
+    "order": 1,
+    "difficulty": 10,
+    "section_id": 18,
+    "id": 136
+  },
+  {
+    "field": "math",
+    "title": "Put numbers up to 30 in order",
+    "grade": "foundation",
+    "question_types": [74],
+    "order": 2,
+    "difficulty": 30,
+    "section_id": 18,
+    "id": 137
+  },
+  {
+    "field": "math",
+    "title": "Making graphs",
+    "grade": "foundation",
+    "question_types": [75],
+    "order": 1,
+    "difficulty": 30,
+    "section_id": 19,
+    "id": 167
+  },
+  {
+    "field": "math",
+    "title": "More or less likely",
+    "grade": "foundation",
+    "question_types": [76],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 138
+  },
+  {
+    "field": "math",
+    "title": "Coin values",
+    "grade": "foundation",
+    "question_types": [77],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 139
+  },
+  {
+    "field": "math",
+    "title": "Count money - 5c coins",
+    "grade": "foundation",
+    "question_types": [78],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 140
+  },
+  {
+    "field": "math",
+    "title": "Count money - 5c and 10c coins",
+    "grade": "foundation",
+    "question_types": [78],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 141
+  },
+  {
+    "field": "math",
+    "title": "Count money - 5c, 10c and 20c coins",
+    "grade": "foundation",
+    "question_types": [78],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 142
+  },
+  {
+    "field": "math",
+    "title": "Equivalent groups of coins",
+    "grade": "foundation",
+    "question_types": [79],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 143
+  },
+  {
+    "field": "math",
+    "title": "Exchanging groups of coins",
+    "grade": "foundation",
+    "question_types": [80],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 144
+  },
+  {
+    "field": "math",
+    "title": "Exchanging coins",
+    "grade": "foundation",
+    "question_types": [81],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 145
+  },
+  {
+    "field": "math",
+    "title": "Compare two groups of coins",
+    "grade": "foundation",
+    "question_types": [82],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 20,
+    "id": 146
+  },
+  {
+    "field": "math",
+    "title": "Name the two-dimensional shape",
+    "grade": "foundation",
+    "question_types": [83],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 147
+  },
+  {
+    "field": "math",
+    "title": "Circles",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 148
+  },
+  {
+    "field": "math",
+    "title": "Squares and rectangles",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 149
+  },
+  {
+    "field": "math",
+    "title": "Hexagons",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 150
+  },
+  {
+    "field": "math",
+    "title": "Select two-dimensional shapes",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 151
+  },
+  {
+    "field": "math",
+    "title": "Count sides and corners",
+    "grade": "foundation",
+    "question_types": [85],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 152
+  },
+  {
+    "field": "math",
+    "title": "Compare sides and corners",
+    "grade": "foundation",
+    "question_types": [86],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 153
+  },
+  {
+    "field": "math",
+    "title": "Introduction to symmetry",
+    "grade": "foundation",
+    "question_types": [87],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 154
+  },
+  {
+    "field": "math",
+    "title": "Identify pictures with symmetry",
+    "grade": "foundation",
+    "question_types": [88],
+    "order": 9,
+    "difficulty": 1,
+    "section_id": 21,
+    "id": 155
+  },
+  {
+    "field": "math",
+    "title": "Two-dimensional and three-dimensional shapes",
+    "grade": "foundation",
+    "question_types": [89, 90],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 156
+  },
+  {
+    "field": "math",
+    "title": "Name the threee-dimensional shape",
+    "grade": "foundation",
+    "question_types": [83],
+    "order": 2,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 157
+  },
+  {
+    "field": "math",
+    "title": "Spheres",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 3,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 158
+  },
+  {
+    "field": "math",
+    "title": "Cubes",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 4,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 159
+  },
+  {
+    "field": "math",
+    "title": "Cones",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 5,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 160
+  },
+  {
+    "field": "math",
+    "title": "Cylinders",
+    "grade": "foundation",
+    "question_types": [84],
+    "order": 6,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 161
+  },
+  {
+    "field": "math",
+    "title": "Select three-dimensional shapes",
+    "grade": "foundation",
+    "question_types": [85],
+    "order": 7,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 162
+  },
+  {
+    "field": "math",
+    "title": "Identify shapes traced from solids",
+    "grade": "foundation",
+    "question_types": [91],
+    "order": 8,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 163
+  },
+  {
+    "field": "math",
+    "title": "Shapes of everyday objects I",
+    "grade": "foundation",
+    "question_types": [92],
+    "order": 9,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 164
+  },
+  {
+    "field": "math",
+    "title": "Shapes of everyday objects II",
+    "grade": "foundation",
+    "question_types": [93],
+    "order": 10,
+    "difficulty": 1,
+    "section_id": 22,
+    "id": 165
+  },
+  {
+    "field": "math",
+    "title": "Sum and difference",
+    "grade": "foundation",
+    "question_types": [94],
+    "order": 1,
+    "difficulty": 1,
+    "section_id": 23,
+    "id": 166
+  }
+]

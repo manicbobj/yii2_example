@@ -1,0 +1,42 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class = "">
+        You answered:
+      </div>
+      <div class="">
+        {{question.response.value}}
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+  </div>
+</div>

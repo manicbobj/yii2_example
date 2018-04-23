@@ -1,0 +1,24 @@
+<div class="site-skilltest-list">
+  <div class="hkmp-page-title orange1-txt">
+    {{grade.title}} maths
+  </div>
+  <p class="hkmp-page-desc">
+    Here is a list of all of the maths skills students learn in {{grade.title}}! These skills are organised into categories, and you can move your mouse over any skill name to preview the skill. To start practising, just click on any link. IXL will track your score, and the questions will automatically increase in difficulty as you improve!
+  </p>
+
+  <isotope-grid class="hkmp-page-test-list row">
+    <isotope-item class="col-sm-6 col-md-4 hkmp-test-section" *ngFor="let section of sections">
+      <div class="hkmp-test-section-title">
+        {{section.title}}
+      </div>
+      <ul class="hkmp-test-list">
+        <li *ngFor="let test of tests[section.id]">
+          <a [routerLink]="['/skills/test', test.id]">
+            <span class="skill-test-number">{{section.order + '.' + test.order}}</span>
+            <span class="skill-test-title">{{test.title}}</span>
+          </a>
+        </li>
+      </ul>
+    </isotope-item>
+  </isotope-grid>
+</div>

@@ -1,0 +1,47 @@
+<div class="section">
+  Count the {{atom.plural}}.
+</div>
+<div class="section">
+  <div class="guide-counting-list">
+
+    <div class="guide-counting-clickable-image-container" *ngFor="let indexer of atomIndexer">
+
+      <div class="guide-counting-clickable-image no-select">
+
+        <div class="guide-counting-image" style="width: 100px; height: 100px">
+          <img class="atom-image" [src]="atom?.url">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="section">
+  Which group has <b>one {{countType}}</b>.
+</div>
+<div class="section">
+  <div class="tile-multiple-choices visible">
+    <div class="tile-cover"></div>
+    <div class="vertical-list-layout">
+      <div class="selectable-tile float multiple-choice natural"
+           *ngFor="let group of groups"
+           [ngClass]="{'selected': group.length == question.response.value}"
+           (click)="selectGroup(group)">
+        <div class="tile-skin-classic float">
+          <div class="arrangement-row">
+            <div class="arrangement-row-cell" *ngFor="let indexer of group" style="width: 100px; height: 100px">
+              <img class="atom-image" [src]="atom?.url">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <button class="btn btn-success" (click)="submit()" [hidden]="mode!=='test'">
+    Submit
+  </button>
+</div>

@@ -1,0 +1,85 @@
+.feedback-message {
+    color: #00adef;
+    font-size: 48px;
+    margin: 0 0 10px 0;
+}
+
+.answer-header {
+    font-size: 16px;
+    color: #719B07;
+    margin: 10px 0;
+}
+
+.lower-grade-feedback .answer-header {
+    font-size: 25px;
+}
+
+.answer-box {
+
+}
+
+.number-button-answer {
+    font-size: 50px;
+    font-family: Nunito,Arial,sans-serif;
+}
+
+.feedback-header {
+    font-family: Trebuchet MS, Verdana, Tahoma, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #77a200;
+    margin: 0 0 20px 0;
+}
+
+.tab-box {
+    border: 1px solid #e3dbff;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding: 9px;
+    position: relative;
+}
+
+.tab-box .tab-box-hd {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAFSCAMAAADfHe90AAAAh1BMVEWlzzWQty6NtC2VvTClzzV4miZ4miZ4miZ4miZ4miZ4miZ4miZ4miZ4miZ4miZKsd5Bm8VAmcFDoMtKsd41gaU1gaU1gaU1gaU1gaU1gaU1gaU1gaU1gaU1gaX/oSn/kwf/jwL/mA//oSnafQDafQDafQDafQDafQDafQDafQDafQDafQDafQA9P+aJAAAALXRSTlP/3/+/gBC//4AAj2DvMN//3/+/gBC//4AAj2DvMN//3/+/gBC//4AAj2DvMN+ylx9+AAAAY0lEQVR4Ae3WoQ6CMQyF0W7t+N//aTGEIVAknQXB+ewRW1JzZxwCAAAAAAA/hzHfZX02q1bbrMzTG7tWD/EcVw/xuO8eojJ7iNjj7w51O/TFXwEAAAAAAJvapgYAAAAAADb1C08CF001n69jAAAAAElFTkSuQmCC') no-repeat;
+    color: #fff;
+    font: normal 13px Verdana, Tahoma, Helvetica, sans-serif;
+    height: 106px;
+    left: -9px;
+    position: absolute;
+    text-align: center;
+    top: 9px;
+    width: 24px;
+    z-index: 10;
+}
+
+.tab-box .tab-box-hd .rot-neg-90 {
+    font-size: 14px;
+    height: 24px;
+    line-height: 21px;
+    width: 80px;
+}
+
+.tab-box .tab-box-bd {
+    margin-left: 23px;
+    margin-top: 11px;
+    min-height: 94px;
+}
+
+.rot-neg-90 {
+    -moz-transform: rotate(-90deg) translateX(-90px);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(-90deg) translateX(-90px);
+    -webkit-transform: rotate(-90deg) translateX(-90px) translate3d(0,0,0);
+    -webkit-transform-origin: top left;
+    -o-transform: rotate(-90deg) translateX(-92px);
+    -o-transform-origin: top left;
+    -ms-transform: rotate(-90deg) translateX(-90px);
+    -ms-transform-origin: top left;
+}
+
+.review-box .tab-box-hd {
+    background-position: 0 0;
+}
+
+.solve-box .tab-box-hd {
+    background-position: 0 -232px;
+}

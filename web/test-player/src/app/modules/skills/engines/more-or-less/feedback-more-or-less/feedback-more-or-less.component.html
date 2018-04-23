@@ -1,0 +1,199 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+
+      <div class="tile-multiple-choices visible">
+        <div class="tile-cover"></div>
+        <div class="vertical-list-layout">
+          <div class="selectable-tile float multiple-choice disabled"
+               *ngFor="let group of groups"
+               [ngClass]="{'selected': group.length == question.validation.valid_response.value}">
+            <div class="tile-skin-classic float">
+              <div class="arrangement-row">
+                <div class="arrangement-row-cell" *ngFor="let indexer of group" style="width: 100px; height: 100px">
+                  <img class="atom-image" [src]="atom?.url">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+
+    <div class="tab-box-bd">
+      <div class="section">
+        Count the {{atom?.plural}}.
+      </div>
+      <div class="section">
+        <div class="guide-counting-list">
+
+          <div class="guide-counting-clickable-image-container" *ngFor="let indexer of atomIndexer">
+
+            <div class="guide-counting-clickable-image no-select">
+
+              <div class="guide-counting-image" style="width: 100px; height: 100px">
+                <img class="atom-image" [src]="atom?.url">
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="section">
+        Which group has <b>one {{countType}}</b>.
+      </div>
+      <div class="section">
+        <div class="tile-multiple-choices visible">
+          <div class="tile-cover"></div>
+          <div class="vertical-list-layout">
+            <div class="selectable-tile float multiple-choice no-interact"
+                 *ngFor="let group of groups">
+              <div class="tile-skin-classic float">
+                <div class="arrangement-row">
+                  <div class="arrangement-row-cell" *ngFor="let indexer of group" style="width: 100px; height: 100px">
+                    <img class="atom-image" [src]="atom?.url">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "">
+        You answered:
+      </div>
+      <div class="">
+        <div class="tile-multiple-choices visible">
+          <div class="tile-cover"></div>
+          <div class="vertical-list-layout">
+            <div class="selectable-tile float multiple-choice no-interact"
+                 [ngClass]="{'selected': group.length == question.response.value}"
+                 *ngFor="let group of groups">
+              <div class="tile-skin-classic float">
+                <div class="arrangement-row">
+                  <div class="arrangement-row-cell" *ngFor="let indexer of group" style="width: 100px; height: 100px">
+                    <img class="atom-image" [src]="atom?.url">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="section">
+        Count the {{atom?.plural}}.
+      </div>
+      <div class="section">
+        <div class="guide-counting-list">
+
+          <div class="guide-counting-clickable-image-container" *ngFor="let indexer of atomIndexer">
+
+            <div class="guide-counting-clickable-image no-select">
+
+              <div class="guide-counting-image" style="width: 100px; height: 100px">
+                <img class="atom-image" [src]="atom?.url">
+              </div>
+
+              <div class="guide-counting-badge-container">
+
+                <div class="guide-counting-badge-animation animated fastZoomIn fastest visible instant">
+
+                  <div class="guide-counting-badge-number default-cursor"
+                       style="font-size: 116%; transform: translate(-50%, -50%);">
+                    {{indexer}}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="section">
+        <p>
+          There are {{numAtoms}} {{(numAtoms == 1 ? atom?.name : atom?.plural)}}.
+        </p>
+        <p>
+          The number just after {{numAtoms}} is <b>one {{countType}}</b>.
+          Count to find one {{countType}} than {{numAtoms}}.
+        </p>
+        <div class="number-row">
+          <div class="number-cell" *ngFor="let indexer of guideIndexer">
+            <div class="exaggerated display-number">
+              <div class="expression number" [ngClass]="{'highlight': indexer === answer}">
+                {{indexer}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          One {{countType}} than {{numAtoms}} is {{answer}}. Find the group with {{answer}} {{(answer == 1 ? atom?.name : atom?.plural)}}.
+        </p>
+      </div>
+      <div class="render-section">
+        <div class="guide-counting-list">
+
+          <div class="guide-counting-clickable-image-container" *ngFor="let indexer of answerIndexer">
+
+            <div class="guide-counting-clickable-image no-select">
+
+              <div class="guide-counting-image" style="width: 100px; height: 100px">
+                <img class="atom-image" [src]="atom?.url">
+              </div>
+
+              <div class="guide-counting-badge-container">
+
+                <div class="guide-counting-badge-animation animated fastZoomIn fastest visible instant">
+
+                  <div class="guide-counting-badge-number default-cursor"
+                       style="font-size: 116%; transform: translate(-50%, -50%);">
+                    {{indexer}}
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

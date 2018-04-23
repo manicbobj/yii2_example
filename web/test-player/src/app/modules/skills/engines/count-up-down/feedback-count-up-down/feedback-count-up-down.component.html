@@ -1,0 +1,99 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+      <div class="counting-input">
+        <input type="text" disabled [ngModel]="question.validation.valid_response.value">
+      </div>
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+
+    <div class="tab-box-bd">
+      <div class="section">
+        Counting {{countType}} from {{number}}, which number comes next?
+      </div>
+      <div class="section">
+        <div class="counting-input">
+          <input type="text" disabled>
+        </div>
+      </div>
+      <div class="section">
+        <div class="answer-header">
+          You answered:
+        </div>
+        <div>
+          <div class="counting-input">
+            <input type="text" disabled [ngModel]="question.response.value">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="section">
+        Start at {{number}}:
+      </div>
+      <div class="section">
+        <table>
+          <tr>
+            <ng-container *ngFor="let guideNumber of guideNumbers">
+              <td>{{guideNumber}}</td>
+              <td>&nbsp;</td>
+            </ng-container>
+          </tr>
+          <tr>
+            <ng-container *ngFor="let guideNumber of guideNumbers">
+              <td>{{guideNumber == number ? '↑' : ' '}}</td>
+              <td>&nbsp;</td>
+            </ng-container>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        Now count {{countType}} from {{number}}.
+      </div>
+      <div class="section">
+        <table>
+          <tr>
+            <ng-container *ngFor="let guideNumber of guideNumbers">
+              <td>{{guideNumber}}</td>
+              <td>{{guideNumber == question.validation.valid_response.value ? '←' : '&nbsp;'}}</td>
+            </ng-container>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <b>{{number}}</b> comes next.
+      </div>
+    </div>
+  </div>
+  <div class="next-question">
+    <button class="btn btn-success btn-large" (click)="submit()">
+      Try next
+    </button>
+  </div>
+</div>

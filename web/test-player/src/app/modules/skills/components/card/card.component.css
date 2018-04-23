@@ -1,0 +1,60 @@
+app-card {
+    display: inline-block;
+}
+
+.numberButtonContainer {
+    display: table-cell;
+    position: inherit;
+    height: 77px;
+    width: 77px;
+    padding: 9px;
+    text-align: center;
+}
+
+.numberButtonContainer svg {
+    border: none;
+    outline: 0;
+}
+
+.interactiveNumberButton {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.numberButton {
+    height: 77px;
+    width: 77px;
+    line-height: 77px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 50px;
+    font-family: Nunito,Arial,sans-serif;
+    color: #fff;
+    position: absolute;
+}
+
+.numberButton1, .numberButton4 {
+    margin-left: -2px;
+}
+
+.numberButtonContainer .card-stroke {
+    stroke: #14beff;
+    fill: #14beff;
+}
+
+.numberButtonContainer.selectable:hover .card-stroke {
+    stroke: #0080e2;
+    fill: #0080e2;
+}
+
+.card-selected .card-stroke {
+    stroke: #004ca2;
+    fill: #004ca2;
+}
+
+.card-selected:hover .card-stroke {
+    stroke: #003d82;
+    fill: #003d82;
+}

@@ -1,0 +1,40 @@
+<div class="section">
+    How many {{atom?.plural}} are there?
+</div>
+
+<div class="section">
+
+  <div class="guide-counting-list">
+
+    <div class="guide-counting-clickable-image-container" *ngFor="let indexer of atomIndexer| keys">
+
+      <div class="guide-counting-clickable-image no-select">
+
+        <div class="guide-counting-image">
+          <img class="atom-image" [src]="atom?.url">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="section" [hidden]="mode==='static'">
+  <div class="numberButtonRow">
+    <ng-container *ngFor="let indexer of cardIndexer">
+      <app-card
+              [cardnum]="indexer"
+              [selected]="indexer == question.response.value"
+              (click)="selectCard(indexer)"
+      >
+      </app-card>
+    </ng-container>
+  </div>
+</div>
+
+<div [hidden]="mode==='static'">
+  <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

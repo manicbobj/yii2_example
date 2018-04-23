@@ -1,0 +1,30 @@
+<div class="section">
+  Type the missing number.
+</div>
+<div class="section relative-container" #container>
+  <canvas #canvas></canvas>
+
+  <div align="center" *ngFor="let number of numbers; index as i"
+       style="position: absolute; text-align: center;"
+       [style.width] = "labelWidth + 'px'"
+       [style.height]="labelHeight + 'px'"
+       [style.top]="labelTop + 'px'"
+       [style.left]="stepSize * (i + 1) - labelWidth / 2 + 'px'">
+
+    <input class="tick-fill-in" title="Fill in missing number" type="text"
+           [(ngModel)]="question.response.value"
+           *ngIf="number == missing && mode !== 'static'">
+
+    <input class="tick-fill-in" title="Fill in missing number" type="text" disabled
+           *ngIf="number == missing && mode==='static'">
+
+    <span *ngIf="number != missing">
+      {{number}}
+    </span>
+
+  </div>
+</div>
+
+<div class="section" [hidden]="mode==='static'">
+  <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

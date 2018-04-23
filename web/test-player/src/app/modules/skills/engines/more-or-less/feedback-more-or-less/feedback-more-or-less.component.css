@@ -1,0 +1,26 @@
+.exaggerated.display-number {
+    font-size: 150%;
+}
+
+.expression {
+    position: relative;
+    text-align: center;
+}
+
+.expression.highlight {
+    color: rgb(80, 80, 255);
+    font-weight: 700;
+}
+
+.number-row {
+    display: table;
+}
+
+.number-cell {
+    display: table-cell;
+    min-width: 30px;
+    padding: 4px 10px;
+    text-align: center;
+    font-weight: 400;
+    color: #202020;
+}

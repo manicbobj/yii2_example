@@ -1,0 +1,28 @@
+<div class="section">
+  Which shows {{problem}}
+</div>
+<div class="section">
+  <div class="tile-multiple-choices visible">
+    <div class="tile-cover"></div>
+    <div class="grid-layout bottom">
+      <div class="selectable-tile float multiple-choice natural"
+           *ngFor="let group of groups;"
+           [ngClass]="{'selected': question.response.value == group.num_atoms}"
+           (click) = "selectGroupBox(group)">
+        <div class="arrangement-group" [ngStyle]="{'width': groupBoxSize + 'px', 'height': groupBoxSize + 'px'}">
+          <div [ngStyle]="{'position': 'absolute', 'left': position.x + 'px', 'top': position.y + 'px'}"
+               *ngFor="let position of group.atom_positions">
+            <img [src]="group.atom.url"
+                 [ngStyle]="{'width': atomSize + 'px', 'height': atomSize + 'px'}">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" [hidden]="mode != 'test'">
+  <button class="btn btn-success" (click)="submit()">
+    Submit
+  </button>
+</div>

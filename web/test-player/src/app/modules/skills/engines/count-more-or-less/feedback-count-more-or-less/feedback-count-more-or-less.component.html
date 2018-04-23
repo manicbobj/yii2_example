@@ -1,0 +1,185 @@
+<div class="lower-grade-feedback">
+  <div class="answer-section">
+    <h2 class="feedback-message">
+      Sorry, incorrect...
+    </h2>
+    <div class="answer-header">
+      The correct answer is:
+    </div>
+    <div class="answer-box">
+      <div class="counting-input">
+        <input type="text" disabled [ngModel]="bottomAtoms">
+      </div>
+    </div>
+    <div class="next-question">
+      <button class="btn btn-success btn-large pull-right" (click)="submit()">
+        Try next
+      </button>
+    </div>
+  </div>
+
+  <h2 class="feedback-header">
+    Explanation
+  </h2>
+
+  <div class="review-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">review</h4>
+    </div>
+
+    <div class="tab-box-bd">
+      <div class="section">
+        <p>
+          There are {{topAtoms}} {{(topAtoms == 1 ? atom?.name : atom?.plural)}} in the top {{frameSize|toWords}} frame.
+          How many {{atom?.plural}} are in the bottom {{frameSize|toWords}} frame?
+        </p>
+        <p>
+          Hint: the bottom {{frameSize|toWords}} frame has <b>one {{countType}}</b>.
+        </p>
+
+      </div>
+      <div class="section">
+        <div class="frame-table-wrapper">
+          <table>
+            <tr>
+              <td class="frame-table-cell">
+                <div class="tenframe-single">
+                  <table *ngIf="topFrame">
+                    <tr *ngFor="let row of topFrame">
+                      <td *ngFor="let cell of row">
+                        <div class="tenframe-cell" style="width:54px; height:54px">
+                          <div class="cell-child">
+                            <img class="atom-image" [src]="atom?.url" *ngIf="cell">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="frame-table-cell">
+                <div class="counting-number in-circle large">
+                  {{topAtoms}}
+                </div>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="frame-table-wrapper">
+          <table>
+            <tr>
+              <td class="frame-table-cell">
+                <div class="tenframe-single">
+                  <table *ngIf="bottomFrame">
+                    <tr *ngFor="let row of bottomFrame">
+                      <td *ngFor="let cell of row">
+                        <div class="tenframe-cell" style="width:54px; height:54px">
+                          <div class="cell-child">
+                            <img class="atom-image" [src]="atom?.url" *ngIf="cell">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="frame-table-cell">
+                <div class="counting-input">
+                  <input type="text" disabled>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <div class="answer-header">
+          You answered:
+        </div>
+        <div>
+          <div class="counting-input">
+            <input type="text" disabled [ngModel]="question.response.value">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solve-box tab-box">
+    <div class="tab-box-hd">
+      <h4 class="rot-neg-90">solve</h4>
+    </div>
+    <div class="tab-box-bd">
+      <div class="section">
+        The bottom row has one {{countType}} than the top row.
+      </div>
+      <div class="section">
+        <div class="tenframe-single guide-counting-list">
+          <table *ngIf="topFrame">
+            <tr *ngFor="let row of topFrame; index as rowIndex">
+              <td *ngFor="let cell of row; index as cellIndex">
+                <div class="tenframe-cell" style="width:54px; height:54px">
+                  <div class="cell-child">
+                    <img class="atom-image" [src]="atom?.url" *ngIf="cell">
+                    <div class="guide-counting-badge-container" *ngIf="cell">
+
+                      <div class="guide-counting-badge-animation animated fastZoomIn fastest visible instant">
+
+                        <div class="guide-counting-badge-number default-cursor"
+                             style="font-size: 116%; transform: translate(-50%, -50%);">
+                          {{rowIndex * row.length + cellIndex + 1}}
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <div class="tenframe-single guide-counting-list">
+          <table *ngIf="bottomFrame">
+            <tr *ngFor="let row of bottomFrame; index as rowIndex">
+              <td *ngFor="let cell of row; index as cellIndex">
+                <div class="tenframe-cell" style="width:54px; height:54px">
+                  <div class="cell-child">
+                    <img class="atom-image" [src]="atom?.url" *ngIf="cell">
+
+                    <div class="guide-counting-badge-container" *ngIf="cell">
+
+                      <div class="guide-counting-badge-animation animated fastZoomIn fastest visible instant">
+
+                        <div class="guide-counting-badge-number default-cursor"
+                             style="font-size: 116%; transform: translate(-50%, -50%);">
+                          {{rowIndex * row.length + cellIndex + 1}}
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        {{bottomAtoms}} is one {{countType}} than {{topAtoms}}.
+      </div>
+      <div class="section">
+        There are {{bottomAtoms}} {{(bottomAtoms == 1 ? atom?.name : atom?.plural)}} in the bottom row.
+      </div>
+    </div>
+  </div>
+  <div class="next-question">
+    <button class="btn btn-success btn-large" (click)="submit()">
+      Try next
+    </button>
+  </div>
+</div>

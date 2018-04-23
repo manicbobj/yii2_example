@@ -1,0 +1,27 @@
+<div class="section">
+  There are {{numShapes}} {{shape.name}}s on the frame. A full frame has 10 {{shape.name}}s. <br>
+  How many more {{shape.name}}s do you need to make 10?
+</div>
+<div class="section">
+  <div class="tenframe-single" *ngFor="let frame of frames">
+    <table>
+      <tr *ngFor="let row of frame">
+        <td *ngFor="let cell of row">
+          <div class="tenframe-cell" style="width:54px; height:54px">
+            <div class="cell-child">
+              <Shape [type]="shape.shape_code" [color]="color" [size]="50" *ngIf="cell.fill"></Shape>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="section" [hidden]="mode==='static' || mode==='solution'">
+  <app-card [cardnum]="card.num" [selected]="card.selected" (click)="selectCard(i)"
+            *ngFor="let card of cards; let i = index" >
+  </app-card>
+</div>
+<div class="section" [hidden]="mode==='static' || mode === 'solution'">
+  <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

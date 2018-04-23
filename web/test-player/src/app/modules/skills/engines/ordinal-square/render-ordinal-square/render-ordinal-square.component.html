@@ -1,0 +1,45 @@
+<div class="section">
+  What color is the {{renderOptions.problem|toWordsOrdinal}} square?
+</div>
+
+<div class="section">
+  <table class="ordinal-numbers-table large">
+    <tbody>
+      <tr>
+        <td class="text-block" *ngFor="let color of renderOptions.square_colors; let i = index">
+          <b>{{i == 0 ? 'first': (i == renderOptions.colors.length - 1 ? 'last' : '')}}</b>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="ordinal-color-box" [bgColor]="color"
+            *ngFor="let color of renderOptions.square_colors;">
+          <div class="ordinal-box-sizing">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+
+<div class="section">
+    <div class="tile-multiple-choices" [ngClass]="{'visible': mode=='test'}" *ngIf="mode=='test'">
+      <div class="tile-cover"></div>
+      <div class="grid-layout top">
+        <div class="selectable-tile natural" *ngFor="let color of renderOptions.colors"
+             (click)="selectTile(color)"
+             [ngClass]="{'selected': question.response.value == color}"
+             [ngStyle]="{'width': '150px', 'height': '50px'}"
+        >
+          <div class="tile-skin-bare center middle">
+            {{color}}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="section" [hidden]="mode==='static'">
+  <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

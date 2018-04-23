@@ -1,0 +1,24 @@
+<div class="site-index">
+  <div class="col-sm-6 col-md-4" *ngFor="let grade of grades | keys">
+    <div class="hkmp-card" [ngClass]="grade.value.styling[0]">
+      <a class="hkmp-card-tab" [ngClass]="grade.value.styling[1]">{{grade.value.tab}}</a>
+      <a class="hkmp-card-title" [ngClass]="grade.value.styling[2]">{{grade.value.title}}</a>
+      <p class="hkmp-card-desc">
+        {{grade.value.desc}}
+      </p>
+
+      <div class="hkmp-card-subject-links">
+        <ol>
+          <li>
+            <span>
+                Maths
+            </span>
+            <a [routerLink]="['/skills', 'math', grade.key]" class="subject-link">
+              {{grade.value.subjects.math}} skills >>>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

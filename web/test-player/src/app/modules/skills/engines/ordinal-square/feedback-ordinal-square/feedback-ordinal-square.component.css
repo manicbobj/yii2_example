@@ -1,0 +1,13 @@
+.ordinal-numbers-table.large .ordinal-color-box, .ordinal-numbers-tables.large .ordinal-color-box .ordinal-box-sizing
+{
+    height: 100px;
+    width: 100px;
+}
+
+.ordinal-numbers-table .ordinal-color-box {
+    border: 2px solid #fff;
+}
+
+.ordinal-numbers-table.large .text-block {
+    text-align: center;
+}

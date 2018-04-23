@@ -1,0 +1,10 @@
+<div class="section">
+    Put {{question?.render_options.problem}} {{getAtomName()}} in the picture.
+</div>
+
+<div class="" #imagePane>
+</div>
+
+<div class="section" [hidden]="mode==='static'">
+    <button class="btn btn-success" (click)="submit()">Submit</button>
+</div>

@@ -1,0 +1,24 @@
+<table class="heavy-table">
+  <thead class="heavy-table-header">
+    <tr class="heavy-table-row">
+      <th class="heavy-table-header-cell col-number">#</th>
+      <th class="heavy-table-header-cell">Question</th>
+      <th class="heavy-table-header-cell">Student Answer</th>
+      <th class="heavy-table-header-cell">Expected Answer</th>
+      <th class="heavy-table-header-cell">Result</th>
+      <th class="heavy-table-header-cell">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="heavy-table-row" *ngFor="let question of session?.questions; index as i">
+      <td class="heavy-table-cell">{{i + 1}}</td>
+      <td class="heavy-table-cell">
+        <ng-template render-placeholder [question]="question" [mode]="'static'"></ng-template>
+      </td>
+      <td class="heavy-table-cell">{{question.response.value}}</td>
+      <td class="heavy-table-cell">{{question.validation.valid_response.value}}</td>
+      <td class="heavy-table-cell">{{question.result.score == 0 ? "Incorrect" : ""}}</td>
+      <td class="heavy-table-cell">{{question.result.score}}</td>
+    </tr>
+  </tbody>
+</table>

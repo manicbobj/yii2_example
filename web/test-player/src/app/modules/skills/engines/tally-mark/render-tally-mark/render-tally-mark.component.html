@@ -1,0 +1,24 @@
+<div class="section">
+  Count the tally marks. What number is shown?
+</div>
+<div class="section">
+  <table>
+    <tr>
+      <td *ngFor="let mark of tallyMarks;">
+        <div>
+          <img class="tally-mark-img" [src]="mark.url">
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="section">
+  <div class="counting-input">
+    <input type="text" [(ngModel)]="question.response.value">
+  </div>
+</div>
+<div class="section" [hidden]="mode != 'test'">
+  <button class="btn btn-success" (click)="submit()">
+    Submit
+  </button>
+</div>
